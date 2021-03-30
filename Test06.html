@@ -1,19 +1,22 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CSS3 Linear Gradients</title>
-        <style>
-        #grad { height: 200px; background: green;
-        background: -webkit-repeating-linear-gradient(150deg, red, white 10%,  blue 20%);
-        background: -moz-repeating-linear-gradient(150deg, red, white 10%,  blue 20%);
-        background: -o-repeating-linear-gradient(150deg, red, white 10%, blue 20%);
-        background: repeating-linear-gradient(150deg, red, white 10%, blue 20%);
-        /* 시계방향 */
-        }
-        </style>
-        </head>
-        <body>
-            <h1>반복되는 선형 그래디언트 - 150도 진행 방향</h1>
-            <div id="grad"></div>
-        </body>
-</html>
+<head>
+    <style>
+    div {   width: 100px;      height: 50px;                       background: red;
+    color: yellow;      border: 1px solid black;       transition: width 3s;
+    }
+    #div1 { transition-timing-function: linear; }
+    #div2 { transition-timing-function: ease; }
+    #div3 { transition-timing-function: ease-in; }
+    #div4 { transition-timing-function: ease-out; }
+    #div5 { transition-timing-function: ease-in-out; }
+    #div6 { transition-timing-function: cubic-bezier(0.1, 0.0, 0.1, 1.0); }
+    div:hover { width: 400px; }
+    </style>
+    </head>
+    <body>
+        <div id="div1" style="top: 100px">linear</div>
+        <div id="div2" style="top: 150px">ease</div>
+        <div id="div3" style="top: 200px">ease-in</div>
+        <div id="div4" style="top: 250px">ease-out</div>
+        <div id="div5" style="top: 300px">ease-in-out</div>
+        <div id="div5" style="top: 350px">cubic-bezier</div>
+    </body>

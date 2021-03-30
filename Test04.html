@@ -1,19 +1,27 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>CSS3 Linear Gradients</title>
-        <style>
-        #grad {
-            height: 200px;
-            background: green;
-            background: -webkit-linear-gradient(225deg, green, yellow);
-            background: -moz-linear-gradient(225deg, green, yellow);
-            background: -o-linear-gradient(225deg, green, yellow);
-            background: linear-gradient(225deg, green, yellow);
-            }
-            </style>
-            </head>
-            <body>
-                <h1>선형 그레디언트 - 225도 진행 방향</h1> <div id="grad"></div>
-            </body>
-</html>
+<style>
+div.keyboard {
+    width: 100px;
+    -webkit-transition: width 1s;
+    transition: width 1s; }
+    div.keyboard:hover { width: 300px; }
+    </style>
+<head>
+    <meta charset="UTF-8">      <!-- 한글 문제 : euc-ko -->
+    <style>
+    div.keyboard {
+        background-color: orange; height: 50px;      width: 100px;       margin: 10px;
+        -webkit-transition: width 1s;
+        transition: width 1s;
+        }
+        div.keyboard:hover { width: 300px; }
+        </style>
+        </head>
+<body>
+    <h1>요소의 너비 변화</h1>
+    <div class="keyboard"></div>
+    <div class="keyboard"></div>
+    <div class="keyboard"></div>
+    <div class="keyboard"></div>
+    <div class="keyboard"></div>
+    <p>각 키보드 위로 마우스를 올려놔 보세요!!</p>
+</body>

@@ -1,23 +1,20 @@
-<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CSS3 Linear Gradients</title>
-    <style>
-    #grad {
-        height: 200px;
-        background: red;
-        background: -webkit-linear-gradient(left, red, orange, yellow, green, blue,
-        indigo, purple);
-        background: -moz-linear-gradient(left, red, orange, yellow, green, blue,
-        indigo, purple);
-        background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, purple);
-        background: linear-gradient(to right, red, orange, yellow, green, blue,
-        indigo, purple);
-        }
+    <style> 
+        div {
+            width: 100px; height: 100px;
+            border: 1px dotted black;
+            background-color: lightgreen;
+            margin: 30px; }
+            div#box1 {
+                transform: rotate(45deg);
+                }
+                div#box2 {
+                    transform: rotate(-90deg);
+                    }
         </style>
         </head>
         <body>
-            <h1>선형 그래디언트 - 무지개</h1>
-            <div id="grad"></div>
+            <div>기본 박스 (0deg)</div>
+            <div id="box1">박스 1 (45deg)</div>
+            <div id="box2">박스 2 (-90deg)</div>
         </body>
-        </html>

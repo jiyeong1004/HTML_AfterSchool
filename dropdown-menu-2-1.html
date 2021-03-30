@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .dropdown{
+            display: inline-block;
+        }
+
+        .dropbtn{
+            background-color: violet;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+            cursor: pointer;
+        }
+        .dropdown-content{
+            display: none;
+            position:absolute;
+            background-color: #7EFFFF;
+            width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-content a:hover{
+            background-color: rgb(243, 79, 79);
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            background-color: skyblue;
+        }
+        .dropdown:hover .dropbtn{
+            background-color: #3e8e41;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Dropdown Menu</h2>
+        <p>Dropdown 메뉴를 열기 위해 마우스를 버튼으로 옮기세요.</p>
+        <div class = "dropdown">
+            <button class = "dropbtn">Dropdown</button>
+            <div class = "dropdown-content">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+            </div>
+        </div>
+        <p><strong>Note:</strong> 실습 하기 위해 href = "#" 링크 사용.</p>
+    </body>
+</html>

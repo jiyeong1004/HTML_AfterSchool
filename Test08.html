@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head><meta charset="UTF-8">
+    <title>CSS3 Radial Gradients</title>
+    <style>
+    div {
+        height: 300px;
+        width: 300px;
+        }
+        #grad_01 {
+            background: red;
+            background: -webkit-radial-gradient(35% 35%, closet-side, red, yellow, orange);
+            background: -moz-radial-gradient(35% 35%, closet-side, red, yellow, orange);
+            background: -o-radial-gradient(35% 35%, closet-side, red, yellow, orange);
+            background: radial-gradient(closest-side at 35% 35%, red, yellow, orange);
+            }
+        #grad_02 {
+            background: red;
+            background: -webkit-radial-gradient(35% 35%, farthest-side, red, yellow, orange);
+            background: -moz-radial-gradient(35% 35%, farthest-side, red, yellow, orange);
+            background: -o-radial-gradient(35% 35%, farthest-side, red, yellow, orange);
+            background: radial-gradient(farthest-side at 35% 35%, red, yellow, orange);
+            }
+        #grad_03 {
+            background: red;
+            background: -webkit-radial-gradient(35% 35%, closet-corner, red, yellow, orange);
+            background: -moz-radial-gradient(35% 35%, closet-corner, red, yellow, orange);
+            background: -o-radial-gradient(35% 35%, closet-corner, red, yellow, orange);
+            background: radial-gradient(closest-corner at 35% 35%, red, yellow, orange);
+            }
+        #grad_04 {
+            background: red;
+            background: -webkit-radial-gradient(35% 35%, farthest-corner, red, yellow, orange);
+            background: -moz-radial-gradient(35% 35%, farthest-corner, red, yellow, orange);
+            background: -o-radial-gradient(35% 35%, farthest-corner, red, yellow, orange);
+            background: radial-gradient(farthest-corner at 35% 35%, red, yellow, orange);
+            }
+            </style>
+            </head>
+            <body>
+                <h1>원형 그래디언트 - 크기 설정</h1>
+                <h3>closet-side</h3>
+                <div id="grad_01"></div>
+                <h3>farthest-side</h3>
+                <div id="grad_02"></div>
+                <h3>closet-corner</h3>
+                <div id="grad_03"></div>
+                <h3>farthest-corner</h3>
+                <div id="grad_04"></div>
+            </body>
+</html>

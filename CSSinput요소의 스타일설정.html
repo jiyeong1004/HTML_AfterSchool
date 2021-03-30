@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Dynamic Selectors</title>
+        <style>
+        input {
+            border: 3px solid #FFEFD5;
+            width: 300px; padding: 10px;    /* 여백 */
+            outline: none;    /* 외곽선 */
+            transition: 0.5s;
+            } input : focus {   border: 3px   solid   #CD853F;   }
+            </style>
+            </head>
+            <body>
+                <h1>input 요소의 스타일 설정</h1>
+                <form>
+                    아래의 입력 양식을 마우스로 클릭해 보세요!<br><br>
+                    <input type="text" id="email" name="email" value="마우스로 클릭해 보세요!">
+        </form>
+    </body>
+</html>

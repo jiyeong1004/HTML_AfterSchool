@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 Linear Gradients</title>
+        <style>
+        #grad {
+            height: 200px;
+            background: green;
+            background: -webkit-linear-gradient(green, yellow);
+            background: -moz-linear-gradient(green, yellow);
+            background: -o-linear-gradient(green, yellow);
+            background: linear-gradient(green, yellow);
+            }
+            #grad1 {
+                height: 200px;
+                background: green;
+                background: -webkit-linear-gradient(right, green, yellow);
+                background: -moz-linear-gradient(right, green, yellow);
+                background: -o-linear-gradient(right, green, yellow);
+                background: linear-gradient(to left, green, yellow);
+                }
+            </style>
+            </head>
+            <body>
+                <h1>선형 그래디언트 - 위쪽에서 아래쪽으로</h1>
+                <div id="grad"></div>
+                <h1>선형 그래디언트 - 오른쪽에서 왼쪽으로</h1>
+                <div id="grad1"></div>
+            </body>
+</html>

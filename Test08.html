@@ -1,27 +1,19 @@
-<head>
-    <style>
-    a {  text-decoration: none;    color: white;        }
-    div {   position: absolute;          left: 0px;
-    width: 80px;                   height: 50px;            background: #ff8080;
-    border: 1px solid red;
-    transition-property: width background;
-    transition-duration: 2s;   /* width가 2s ,  background가 2초 동안 변환 */
-    line-height: 50px;
-    }
-    div:hover {
-        width: 200px;
-        transition-timing-function: linear;
-        background: #ff0000;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        }
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Text</title>
+        <style>
+        .narrowLineHeight{line-height:0.8;}
+        .wideLineHeight{line-height:1.8;}
         </style>
-        </head>
-        <body>
-            <div style="top:50px"><a href="#" target="new">HOME</a></div>
-            <div style="top:100px"><a href="#" target="new">ABOUT</a></div>
-            <div style="top:150px"><a href="#" target="new">NEWS</a></div>
-            <div style="top:200px"><a href="#" target="new">STUDY</a></div>
-            <div style="top:250px"><a href="#" target="new">CONTACT</a></div>
-        </body>
+    </head>
+    <body>
+        <h1>line-height 속성을 이용한 줄간격 설정</h1>
+        <p class="narrowLineHeight">이 부분은 줄간격을 줄여보았어요!<br>
+        이 부분은 줄간격을 줄여보았어요!</p>
+        <p>이 부분은 기본 줄간격입니다.<br>
+        이 부분은 기본 줄간격입니다.</p>
+        <p class="wideLineHeight">이 부분은 줄간격을 늘려보았어요!<br>
+        이 부분은 줄간격을 늘려보았어요!</p>
+    </body>
+</html>

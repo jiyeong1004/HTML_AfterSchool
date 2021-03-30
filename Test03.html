@@ -1,21 +1,14 @@
-<head>
-    <style>
-    div {   background-color: green;    height: 150px;            width: 150px;        }
-    .container {     background-color: white;       border: 1px solid black;        }
-    .transformed:hover { backface-visibility: visible;            transform-origin: 50% 42%;
-    transform: perspective(500px) rotateY(50deg) rotateX(0deg);
-    }
-    .transformed2:hover {      backface-visibility: visible;           transform-origin: 50% 42%;
-    transform: perspective(500px) rotateY(0deg) rotateX(45deg);
-    }
-    </style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Font Property</title>
+        <style>
+        .font_big{ font-size: 2em;}
+        .font_italic{ font-style: italic;}
+        .font_bold{ font-weight: bold;}
+        </style>
     </head>
     <body>
-        <div class="container">
-            <div class="transformed">박스 1</div>
-        </div>
-        <p></p>
-        <div class="container">
-            <div class="transformed2">박스 2</div>
-        </div>
+        <p class="font_big font_italic font_bold">Lorem ipsum dolor amet</p>
     </body>
+</html>

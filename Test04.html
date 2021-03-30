@@ -1,27 +1,16 @@
-<style>
-div.keyboard {
-    width: 100px;
-    -webkit-transition: width 1s;
-    transition: width 1s; }
-    div.keyboard:hover { width: 300px; }
-    </style>
-<head>
-    <meta charset="UTF-8">      <!-- 한글 문제 : euc-ko -->
-    <style>
-    div.keyboard {
-        background-color: orange; height: 50px;      width: 100px;       margin: 10px;
-        -webkit-transition: width 1s;
-        transition: width 1s;
-        }
-        div.keyboard:hover { width: 300px; }
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Text</title>
+        <style>
+        .rightToLeft{direction:rtl;}
         </style>
-        </head>
-<body>
-    <h1>요소의 너비 변화</h1>
-    <div class="keyboard"></div>
-    <div class="keyboard"></div>
-    <div class="keyboard"></div>
-    <div class="keyboard"></div>
-    <div class="keyboard"></div>
-    <p>각 키보드 위로 마우스를 올려놔 보세요!!</p>
-</body>
+    </head>
+    <body>
+        <h1>direction 속성을 이용한 텍스트 방향 설정</h1>
+        <p>기본적으로 텍스트가 써지는 방향은 왼쪽에서 오른쪽입니다~</p>
+        <p>객체 지향 프로그래밍!!!</p>
+        <p class = "rightToLeft">!!!اسنصمنبنبني</p>
+    </body>
+</html>

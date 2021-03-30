@@ -1,22 +1,18 @@
-<head>
-    <style>
-    div {   width: 100px;      height: 50px;                       background: red;
-    color: yellow;      border: 1px solid black;       transition: width 3s;
-    }
-    #div1 { transition-timing-function: linear; }
-    #div2 { transition-timing-function: ease; }
-    #div3 { transition-timing-function: ease-in; }
-    #div4 { transition-timing-function: ease-out; }
-    #div5 { transition-timing-function: ease-in-out; }
-    #div6 { transition-timing-function: cubic-bezier(0.1, 0.0, 0.1, 1.0); }
-    div:hover { width: 400px; }
-    </style>
+<html>
+    <head>
+        <meta charset="ecu-kr">
+        <title>CSS Text</title>
+        <style>
+        .paralndent{text-indent: 30px}
+        </style>
     </head>
     <body>
-        <div id="div1" style="top: 100px">linear</div>
-        <div id="div2" style="top: 150px">ease</div>
-        <div id="div3" style="top: 200px">ease-in</div>
-        <div id="div4" style="top: 250px">ease-out</div>
-        <div id="div5" style="top: 300px">ease-in-out</div>
-        <div id="div5" style="top: 350px">cubic-bezier</div>
+        <h1>text-indent 속성을 이용한 들여쓰기 설정</h1>
+        <p>기본 설정은 들여쓰기를 사용하지 않습니다!!Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi eget mauris at metus ullamcorper okacerat.
+            Maecenas elementum accumsan lacus quis venenatis. </p>
+            <p class="paralndent">자 이제 들여쓰기를 설정해 봅시다!!Lorem ipsum dolor sit amet, consecteful adipiscing elit.
+                Morbi eget mauris at metus ullamcorper placerat. Maecenas elementum accumsan lacus quis venenatis.
+            </p>
     </body>
+</html>

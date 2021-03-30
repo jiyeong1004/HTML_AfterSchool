@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <ul id = "myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <p>리스트 항목을 추가하기 위해 클릭</p>
+
+        <button onclick="myFuntion()">Try it</button>
+
+        <script>
+        function myFuntion(){
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode("Water");
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+        }
+        </script>
+    </body>
+</html>

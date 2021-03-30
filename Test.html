@@ -1,0 +1,54 @@
+<html>
+    <head> 
+        <style type="text/css"> 
+          td,input { width: 200px; height: 20px; font-size: 15px; text-align: center;} 
+          
+        </style> 
+          <title>숫자 맞추기 게임</title> 
+          <script type="text/javascript"> 
+              var i=0; 
+              var rrand = Math.random()*100; 
+              var result = Math.floor(rrand); 
+              function aa(a) { 
+                  var tex1; 
+                  tex1= parseInt(document.getElementById("num1").value); 
+      
+                  var rrand = Math.random()*100; 
+                  var result = Math.floor(rrand); 
+                   
+                  if(tex1==this.result){ 
+                      document.getElementById("Hint2").value ="정답";
+                  }else if(tex1<this.result){ 
+                    document.getElementById("Hint2").value ="생성된 수보다 큼";
+                     document.getElementById("count2").value= ++this.i;
+                }else if(tex1>this.result){ 
+                    document.getElementById("Hint2").value = "생성된 수보다 작음";
+                    document.getElementById("count2").value= ++this.i;
+                } 
+            } 
+      
+        </script> 
+      </head> 
+      <body> 
+          <table> 
+          <h2>숫자 맞추기 게임</h2> 
+          <p> 이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다.<br> 
+          숫자는 1부터 100 사이에 있습니다.</p> 
+          <tr> 
+            <td>숫자 : </td> 
+            <td><input type="text" id="num1" size="5"></td> 
+            <td><input type="button" value="확인" onclick="aa()"></td> 
+          </tr> 
+          <tr> 
+            <td>추측횟수 : </td> 
+            <td ><input type="text" name="count1" id="count2" size="5"></td> 
+          </tr> 
+          <tr>   
+            <td>힌트 : </td> 
+            <td ><input type="text" name="Hint1" id="Hint2" size="50"></td> 
+          </tr> 
+           
+           
+      </table> 
+      </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <ul id = "myList">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <p>Click the button to remove the first item from the list.</p>
+        <button onclick="myFuntion()">Try it</button>
+
+        <script>
+        function myFuntion(){
+            var list = document.getElementById("myList");
+            list.removeChild(list.childNodes[0]);  //첫 번째 리스트 삭제
+        }
+        </script>
+    </body>
+</html>
